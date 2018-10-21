@@ -49,6 +49,16 @@ PG8/UART1-RTS | AC17 | BT-UART-CTS | named as module signal name
 PG9/UART1-CTS | U21 | BT-UART-RTS | named as module signal name
 
 
+### BOM
+
+1. U1 ampak ap6356s
+2. Y1 epson 37.4MHz crystall
+3. J1, J2, hirose u.fl connector
+4. L1, panasonic ELL4G4R7N
+5. C1/C2, pf capacitor for crystal
+6. C3/C5, 4.7uF 0603 x5r 10V
+7. C4, 1uF, 0402 x5r 10V
+8. R1, 10K 1%, 0402
 
 
 

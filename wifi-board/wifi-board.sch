@@ -282,11 +282,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 3850 3350 3850
 Wire Wire Line
-	4850 5850 7800 5850
-Wire Wire Line
-	4850 5950 7800 5950
-Wire Wire Line
-	4850 6050 7800 6050
+	7050 5950 7800 5950
 Wire Wire Line
 	3350 6250 2750 6250
 Wire Wire Line
@@ -330,12 +326,10 @@ Connection ~ 3250 3450
 NoConn ~ 7800 4150
 Wire Wire Line
 	4850 5750 5700 5750
-Text Label 5150 5750 0    60   ~ 0
-BT_UART_RX
 Wire Wire Line
 	7800 5750 7050 5750
 Text Label 7050 5750 0    60   ~ 0
-BT_UART_RX
+BT_UART_TX
 Text Notes 5800 2550 0    60   ~ 0
 crystal oscillator, 37.4MHz recommended.\nsee cypress cyw4356 datasheet.
 $Comp
@@ -608,4 +602,28 @@ F 3 "" H 11800 3350 50  0001 C CNN
 $EndComp
 Text Notes 10350 3050 0    60   ~ 0
 ELL4GG4R7N
+Wire Wire Line
+	7800 5850 7050 5850
+Text Label 7050 5850 0    60   ~ 0
+BT_UART_RX
+Wire Wire Line
+	4850 5850 5700 5850
+Text Label 5150 5850 0    60   ~ 0
+BT_UART_TX
+Text Label 5150 5750 0    60   ~ 0
+BT_UART_RX
+Text Label 7050 5950 0    60   ~ 0
+BT_UART_RTS
+Wire Wire Line
+	7800 6050 7050 6050
+Text Label 7050 6050 0    60   ~ 0
+BT_UART_CTS
+Wire Wire Line
+	4850 5950 5700 5950
+Text Label 5150 5950 0    60   ~ 0
+BT_UART_CTS
+Wire Wire Line
+	4850 6050 5700 6050
+Text Label 5150 6050 0    60   ~ 0
+BT_UART_RTS
 $EndSCHEMATC
